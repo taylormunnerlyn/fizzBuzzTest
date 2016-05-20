@@ -10,13 +10,13 @@ describe('fizzBuzz', function() {
 
   it('should call console.log the correct number of times', function() {
     fizzBuzz();
-    expect(console.log.calls.count()).toEqual(47);
+    expect(console.log.calls.count()).toEqual(99);
   })
 
   it('should work correctly', function() {
     fizzBuzz();
-    expect(console.log.calls.all()[41].args[0].toLowerCase()).toEqual('fizz')
-    expect(console.log.calls.all()[12].args[0].toLowerCase()).toEqual('buzz')
-    expect(console.log.calls.all()[42].args[0].toLowerCase()).toEqual('fizzbuzz')
+    expect(console.log.calls.all()[2].args[0].toLowerCase()).toEqual('fizz')
+    expect(console.log.calls.all()[9].args[0].toLowerCase()).toEqual('buzz')
+    expect(console.log.calls.all()[14].args[0].toLowerCase()).toEqual('fizzbuzz')
   })
 })
